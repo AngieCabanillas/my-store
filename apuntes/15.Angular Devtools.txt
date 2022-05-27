@@ -1,0 +1,3 @@
+https://chrome.google.com/webstore/detail/angular-devtools/ienfalfjdbdpebioblfackkekamfmbnh/related
+-------------------
+ver apps que usen angular para ver componentes

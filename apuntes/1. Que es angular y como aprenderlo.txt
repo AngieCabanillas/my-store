@@ -1,0 +1,5 @@
+Es un framework pero tambien una plataforma
+-Tiene a forms, material,CDK, Language Services.
+-Logra un buen rendimiento de la aplicacion
+-Logramos tener aplicaciones multiplataforma(electron, dispositivo nativo)
+-Tiene increible tooling(typescript, language services)

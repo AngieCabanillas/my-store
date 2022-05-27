@@ -1,0 +1,27 @@
+en el src del proyecto
+*browserslistrc
+si quieres cambiar la version sobre tu navegador
+
+*editor.config
+ayuda a entender rglas que tiene el equipo y para que funcione debes tener el plugging EditorConfig for VS Code
+
+*tsconfig.json
+nos va decir como  va compilar, hacia donde va traspilar los archivos, que version de javascript (target:es2017), algunas configuraciones del compilador de angular, templates estrictos, entre otras cosas.
+
+*angular.json
+Manejamos diferentes ambientes, stagging(pruebas), aqui el equipo de tester puede empezar a probar la aplicación y también aqui hay algunas configuraciones de compilacion de angular,(budgets -> tamaño que deberia tener nuestra aplicacion) 
+
+*karma.conf.js
+para correr pruebas unitarias (tester)
+
+*package.json
+scripts
+dependencias y versiones en las que se trabaja
+
+*agregar ".nvmrc" (node version manager rc)
+si trabajas con diferentes versiones de node, verificas la version de node  que tienes y la agregas en el archivo.nvmrc -> v14.17.3  
+
+-----------------------------------------------
+instalar pluggings:
+-Angular Language Service
+-EditorConfig for VS Code

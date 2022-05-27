@@ -1,0 +1,20 @@
+Es la forma en que nosotros podemos modificar atributos desde el controlador y mandarle esto a los atributos de html Ej: estado de button
+
+**************************************
+COLOCAMOS ENTRE CORCHETES AL NOMBRE DE LA PROPIEDAD Y A SU VALOR LE COLOCAMOS EL NOMBRE DE LA VARIABLE QUE DECLARAMOS EN EL app.component.ts
+*********************************************
+<!--PROPERTY BINDING-->
+<button [disabled]="btnDisabled">Desactivado</button>
+<input type="text" name="" id="" [value]="person.name">
+<progress max="100" [value]="age"></progress>
+<img [src] = "person.avatar">
+**********************************************
+Es una forma de controlar dinámicamente algunos atributos html para que estos sean renderizados apartir una string, variable o atributo de un objeto de la capa logica.
+
+Solo funcionan en una direccion desde la capa logica (conponent.ts) al objeto destino (atributo html), a esto se le conoce como flujo de datos.
+
+Debemos vincular los valores del componente a los atributos html, esto logramos encerrando el atributo html entre “square brakets”.
+
+Los corchetes [ ] (square brakets) hacen que Angular evalúe el lado derecho de la asignación como una expresión dinámica. Sin los corchetes, Angular trata el lado derecho como un literal de cadena y establece la propiedad en ese valor estático.
+*****************************************************************
+Property Binding es la manera que dispone Angular para controlar y modificar las propiedades de los distintos elementos de HTML. Para esto, simplemente utiliza los corchetes [] para poder modificar dinámicamente ese atributo desde el controlador.

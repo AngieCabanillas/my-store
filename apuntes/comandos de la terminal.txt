@@ -1,0 +1,9 @@
+ng serve -> correr proyecto
+*******************************************
+ng serve -o ->lanza el proyecto en una ventana de tu navegador predeterminado
+*******************************************
+ng serve -o --port=3500 -> cambiar puerto para que corra el proyecto
+*********************************************
+cd my-store/
+ng version -> ver propiedades del proyecto
+*********************************************

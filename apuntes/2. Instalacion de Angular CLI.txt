@@ -1,0 +1,14 @@
+node -v -> ver version de node
+npm -v -> verificar version del manejador de paquetes
+npm i -g @angular/cli -> Instala el CLI de Angular
+ng version ->Verifica tu instalación y version del CLI
+
+ng new my-store -> crear una nueva aplicacion
+y -> para routing en mi proyecto
+sass-> escogemos este preprocesador de css
+
+*una vez creado, entramos a la carpeta que se creó: my-store
+cd my-store/
+
+*luego corremos el servidor del proyecto
+ng serve

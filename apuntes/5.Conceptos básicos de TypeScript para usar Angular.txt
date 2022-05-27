@@ -1,0 +1,39 @@
+TypeScript es un superconjunto de JavaScript. Permite escribir código JS utilizando tipado de datos estáticos y clases. Convierte a JavaScript en un lenguaje más firme y seguro, reduciendo la tasa de errores gracias a la detección temprana de bugs.
+-------------------------------------
+Características de TypeScript
+Tipado de datos: Indicar tipo de dato de una variable.
+const empresa: string = 'Platzi';
+const id: number = 12;
+------------------------------------------
+Inferencia de tipos: Declaración de variables sin especificar el tipo.
+
+const empresa = 'Platzi';
+
+TS automáticamente detectará que la variable es un string y evitará asignar otro tipo de dato.
+-------------------------------------------
+Doble tipado: Asignación de dos tipos de datos a una misma variable.
+
+const empresa: string | number = 'Platzi';
+
+La variable puede ser tanto del tipo string como number.
+---------------------------------------------
+Tipado de parámetros y retornos de una función:
+
+function myFunction(empresa: string): number {
+    // ...
+}
+
+La función myFunction espera recibir una variable del tipo string y retornará un number.
+---------------------------------------------------
+Clases y POO: TypeScript le agrega a Javascript la posibilidad de programar Orientado a Objetos.
+
+class Empresa {
+    private empresa: string;
+    constructor(empresa: string) {
+        this.empresa = empresa;
+    }
+}
+
+Para la posterior creación de objetos a partir de esa clase:
+
+const empresa = new Empresa('Platzi');

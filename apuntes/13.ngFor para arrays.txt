@@ -1,0 +1,43 @@
+<!--ng objects-->
+<h1>ng object</h1>
+<div>
+  <div *ngFor="let product of products">
+    <h2>{{ product.name }}</h2>
+    <p>{{ product.price }}</p>
+    <img width="250" [src]="product.image" alt="image" />
+  </div>
+</div>
+<br />
+------------------------------------
+CREAR INTERFACE PARA EXPORTAR -> procut.mode.ts
+export interface Product{
+  name:string,
+  price:number,
+  image:string,
+  category?:string,
+}
+------------------------------------
+en el app.component.ts
+//importando interfaz product para usarla como tipo de dato para mi array
+import{Product} from './product.model';
+------------------------------------
+//creando array de objetos
+  products: Product[] = [
+    {
+      name:'bicicleta',
+      price:350,
+      image:'./assets/images/bicicleta.jpg',
+      category: 'para niños',
+    },
+    {
+      name:'muñeca',
+      price:100,
+      image:'./assets/images/muñeca.jpg',
+    },
+    {
+      name:'reloj',
+      price:200,
+      image:'./assets/images/reloj.jpg',
+    }
+  ];
+

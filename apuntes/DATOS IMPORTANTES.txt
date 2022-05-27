@@ -1,0 +1,17 @@
+**CLASES
+export class AppComponent {
+  name='angie';
+  age=21;
+  img = 'https://www.purina...';
+  btnDisabled = true;
+}
+
+**FUNCIONES
+
+
+**OBJETOS
+person = {
+    name:'angie',
+    age: 21,
+    avatar:'https://www.purina...',
+  }

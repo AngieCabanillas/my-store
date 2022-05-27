@@ -1,0 +1,11 @@
+se usa con [ngSwitch]
+--------------------------
+<!--ngSwitch-->
+<h1>ngSwitch</h1>
+<input type="text" required [(ngModel)]="person.name" />
+<div [ngSwitch]="person.name">
+  <p *ngSwitchCase="'angie'">La persona es Angie</p>
+  <p *ngSwitchCase="'alessio'">La persona es Alessio</p>
+  <p *ngSwitchCase="'rosa'">La persona es Rosa</p>
+  <p *ngSwitchDefault="">No hay personas</p>
+</div>

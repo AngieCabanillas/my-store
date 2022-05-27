@@ -1,0 +1,16 @@
+*Me permite traer variables a mi app.component.html declaradas en mi componente  app.component.ts
+
+*nos permite asignar variables a un atributo src de una imagen, es decir, si esta declarada en el componente, podemos traerla al html
+
+*Si tengo variables publicas en mi app.component.ts puedo tenerlas tmb en el template de app.component.html con STRING INTERPOLATION
+{{nombreVariable}}
+
+*La forma en la que desde la lógica de nuestro typeScript podemos pasar datos a renderizar a nuestro template(html). En otras palabras, con las {{ }} podemos usar typeScript en html.
+
+----------------------------------------------
+{{1 +1}}
+{{myVar}}
+{{myFunction()}}
+
+<h1>Hola soy {{name}}  y tengo {{age}}</h1>
+<img src={{img}} alt="image">

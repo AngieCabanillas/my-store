@@ -1,0 +1,18 @@
+*ngIf
+<div *ngIf="isPlatzi">Hola, soy Platzi</div>
+
+<p *ngIf="person.name === 'nicolas'">Soy Nicolas</p>
+<p *ngIf="person.name === 'juan' && person.age === 21; else nombre_template">Soy juan de 18 años</p>
+<ng-template #nombre_template>
+  Soy otra persona
+</ng-template>
+--------------------------------------------
+If … else
+Para usar un else en Angular, la sintaxis es algo especial. Debes crear un template en tu código HTML usando la etiqueta que provee Angular llamada <ng-template> con una Variable de Template, comenzando con #, para hacer referencia a este elemento desde tu If.
+---------------------------------------------
+<div *ngIf="isPlatzi; else templateElse">Hola, soy Platzi</div>
+<ng-template #templateElse>
+    <div>No soy Platzi</div>
+</ng-template
+--------------------------------------
+Si la condición del If no se cumple, seguido de punto y coma, se coloca la sentencia else haciendo referencia a templateElse, que es el nombre de la variable del template a mostrar en su lugar.
