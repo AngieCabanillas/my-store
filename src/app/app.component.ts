@@ -25,18 +25,34 @@ export class AppComponent {
     {
       name:'bicicleta',
       price:350,
-      image:'./assets/images/bicicleta.jpg',
+      image:'./assets/images/bici.jpg',
       category: 'para niños',
     },
     {
       name:'muñeca',
       price:100,
-      image:'./assets/images/muñeca.jpg',
+      image:'./assets/images/muñequita.jpg',
     },
     {
       name:'reloj',
       price:200,
-      image:'./assets/images/reloj.jpg',
+      image:'./assets/images/relojito.jpg',
+    },
+    {
+      name:'bicicleta',
+      price:350,
+      image:'./assets/images/bici.jpg',
+      category: 'para niños',
+    },
+    {
+      name:'muñeca',
+      price:100,
+      image:'./assets/images/muñequita.jpg',
+    },
+    {
+      name:'reloj',
+      price:200,
+      image:'./assets/images/relojito.jpg',
     }
   ];
 

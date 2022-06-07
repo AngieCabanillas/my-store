@@ -1,5 +1,5 @@
 <!--ngSwitch-->
-<h1>ngSwitch</h1>
+<h1 class="title">ngSwitch</h1>
 <input type="text" required [(ngModel)]="person.name" />
 <div [ngSwitch]="person.name">
   <p *ngSwitchCase="'angie'">La persona es Angie</p>
@@ -10,17 +10,17 @@
 
 <br />
 <!--ng objects-->
-<h1>ng object</h1>
-<div>
-  <div *ngFor="let product of products">
+<h1 class="title">ng object</h1>
+<div class="product-grid">
+  <div  *ngFor="let product of products">
     <h2>{{ product.name }}</h2>
     <p>{{ product.price }}</p>
-    <img width="250" [src]="product.image" alt="image" />
+    <img class="product-grid-image"[src]="product.image" alt="image" />
   </div>
 </div>
 <br />
 <!--ngFor-->
-<h1>*ngFor</h1>
+<h1 class="title">*ngFor</h1>
 <input type="text" required [(ngModel)]="newName" />
 <button (click)="addName()">Add name</button>
 <ul>
@@ -31,7 +31,7 @@
   </li>
 </ul>
 <!--ngIf-->
-<h1>*ngIf</h1>
+<h1 class="title"> *ngIf</h1>
 <input
   type="text"
   name=""
@@ -54,7 +54,7 @@
 
 <hr />
 <!--OTROS EVENTOS-->
-<h1>Otros eventos</h1>
+<h1 class="title">Otros eventos</h1>
 <div class="box" (scroll)="conteoScroll($event)">
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nihil
@@ -74,21 +74,21 @@
 />
 
 <!--EVENT BINDING-->
-<h1>Eventos</h1>
+<h1 class="title">Eventos</h1>
 <button (click)="cambiarBoton()">Cambiar botón</button>
 <p>Edad {{ person.age }}</p>
 <button (click)="incrementarEdad()">Age++</button>
 <hr />
 <!--PROPERTY BINDING-->
-<h1>Property Binding</h1>
+<h1 class="title">Property Binding</h1>
 <button [disabled]="btnDisabled">Enviar</button>
 <input type="text" name="" id="" [value]="person.name" />
 <progress max="100" [value]="person.age"></progress>
-<img [src]="person.avatar" alt="image" />
+<img width="100px" [src]="person.avatar" alt="image" />
 <hr />
 <!--STRING INTERPOLATION-->
-<h1>String Interpolation</h1>
-<h1>Hola soy {{ name }} y tengo {{ age }}</h1>
-<img src="{{ img }}" alt="image" />
-<h2>Hola {{ "angie".repeat(3) }}</h2>
+<h1 class="title">String Interpolation</h1>
+<h4>Hola soy {{ name }} y tengo {{ age }}</h4>
+<img width="100px" src="{{ img }}" alt="image" />
+<h2>Hola {{ "angie".repeat(2) }}</h2>
 <hr />
