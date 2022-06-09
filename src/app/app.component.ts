@@ -8,6 +8,8 @@ import{Product} from './product.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  widthImg=10;
+
   name='angie';
   age=21;
   img = 'https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/social_share_large/public/Purina%C2%AE%20Como%20elegir%20un%20nuevo%20gatito.jpg?itok=WOC5m4KQ';

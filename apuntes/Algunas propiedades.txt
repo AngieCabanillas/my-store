@@ -1,0 +1,2 @@
+TRANSITION
+La propiedad transition es una propiedad abreviada de transition-property, transition-duration, transition-timing-function (en-US), y transition-delay. Permite definir la transición entre dos estados de un elemento. Hay diferentes estados que pueden ser definidos utilizando pseudo-clases como :hover o :active  o aplicado dinámicamente usando JavaScript.

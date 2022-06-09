@@ -1,3 +1,28 @@
+<!--Class[] and style-->
+<!--Dinamismo en class y style-->
+<h1 class="title">Classs and style</h1>
+<!--colocando identificador a input-->
+<input type="text" required #input2="ngModel" [(ngModel)]="person.name" />
+<!--crenado clase con el class-->
+<p class="message-error" [class.cualquier-nombre]="input2.invalid">
+  Este campo es requerido
+</p>
+
+<label for="">Nombre</label>
+<input type="text" required #input3="ngModel" [(ngModel)]="person.name" />
+<p [style.font-style] = "input3.invalid ? 'italic' : 'normal'" >texto texto texto</p>
+
+
+<div class="dinamic-grid">
+  <div>
+    <input type="text" [(ngModel)]="widthImg" />
+  </div>
+  <div>
+    <img [style.width.%] = "widthImg" [src]="person.avatar" alt="image" />
+  </div>
+</div>
+
+<hr />
 <!--ngSwitch-->
 <h1 class="title">ngSwitch</h1>
 <input type="text" required [(ngModel)]="person.name" />
@@ -12,10 +37,10 @@
 <!--ng objects-->
 <h1 class="title">ng object</h1>
 <div class="product-grid">
-  <div  *ngFor="let product of products">
+  <div *ngFor="let product of products">
     <h2>{{ product.name }}</h2>
     <p>{{ product.price }}</p>
-    <img class="product-grid-image"[src]="product.image" alt="image" />
+    <img class="product-grid-image" [src]="product.image" alt="image" />
   </div>
 </div>
 <br />
@@ -31,7 +56,7 @@
   </li>
 </ul>
 <!--ngIf-->
-<h1 class="title"> *ngIf</h1>
+<h1 class="title">*ngIf</h1>
 <input
   type="text"
   name=""

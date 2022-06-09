@@ -32,3 +32,19 @@
     gap: 20px;
   }
 }
+.message-error{
+  background-color: red;
+  color:white;
+  opacity: 0;
+  /**agregando transicion-> cuando cambia d un estado a otro/
+  transition:*/
+  transition: all linear 0.5s;
+}
+/*agregando dinamismo en css*/
+.cualquier-nombre{
+    opacity: 1;
+}
+.dinamic-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}

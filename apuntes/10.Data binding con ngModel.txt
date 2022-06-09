@@ -1,0 +1,12 @@
+"la banana en la caja"
+se usa mayormente para escuchar a los inputs
+*ngModel pertenece al paquete de Angular Forms
+*ngModel -> fusion entre property binding y event binding
+() -> event binding
+[]-> property binding
+
+[(ngModel)] = "person.name" -> escucha la propiedad y eventos de person.name que s un input
+
+-------------------------------------
+importar paquete de angular forms
+import { FormsModule } from '@angular/forms';

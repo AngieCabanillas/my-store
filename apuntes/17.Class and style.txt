@@ -1,0 +1,8 @@
+*permite darle dinamismo a tus class y estilos
+*no se puede usar una clase si no sta declarada
+*class
+[class.cualquier-nombre]="input2.invalid"
+
+*style
+[style.font-style] = "input3.invalid ? 'italic' : 'normal'"
+[style.width.%] = "widthImg"
