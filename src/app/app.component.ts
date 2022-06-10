@@ -10,6 +10,18 @@ import{Product} from './product.model';
 export class AppComponent {
   widthImg=10;
 
+  box ={
+    width:100,
+    height:100,
+    background:' purple'
+  }
+
+  register={
+    name:'',
+    email:'',
+    password:''
+  }
+
   name='angie';
   age=21;
   img = 'https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/social_share_large/public/Purina%C2%AE%20Como%20elegir%20un%20nuevo%20gatito.jpg?itok=WOC5m4KQ';
@@ -89,5 +101,9 @@ export class AppComponent {
 
   deleteName(index: number) {
     this.names.splice(index, 1);
+  }
+
+  onRegister(){
+    console.log(this.register);
   }
 }

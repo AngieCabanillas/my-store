@@ -1,3 +1,6 @@
+*{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 .box {
   height: 200px;
   width: 200px;
@@ -47,4 +50,54 @@
 .dinamic-grid{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+/*ngClass and ngStyle*/
+.valido{
+  border-bottom:1px solid green;
+}
+.invalido{
+  border-bottom:1px solid red;
+}
+
+.formulario{
+  display: grid;
+  padding: 10px;
+  justify-items: center;
+  grid-template-columns: repeat(1, 0.25fr);
+  justify-content:center ;
+}
+.input-group{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.input-group input{
+  border:  1px solid  rgb(97, 93, 93);
+  padding: 5px;
+  background-color: rgb(243, 237, 237);
+  width: 100%;
+  border-radius: 5px;
+}
+.input-group label{
+  font-size: 16px;
+}
+.title-form{
+  text-align: center;
+  margin: 10px;
+}
+.input-group p{
+  margin: 3px;
+}
+.nombreValido{
+  opacity: 0;
+
+}
+.formulario button{
+  margin: 15px;
+  background-color: rgb(192, 231, 237);
+  color: black;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 200px;
 }

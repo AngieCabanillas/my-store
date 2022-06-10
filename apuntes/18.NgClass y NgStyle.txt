@@ -1,0 +1,14 @@
+*darles estilos dinámicos en grupo 
+
+NgClass
+[ngClass]="{
+    'valido':input4.valid,
+    'invalido':input4.invalid
+  }"
+
+NgStyle
+<div [ngStyle]="{
+      'width.px': box.width,
+      'height.px':box.height,
+      'background-color':box.background
+    }">

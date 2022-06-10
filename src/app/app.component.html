@@ -1,6 +1,58 @@
+<!--FORMULARIO-->
+<h1 class="title-form">My account</h1>
+<form (ngSubmit)="onRegister()"  #myForm="ngForm" class="formulario">
+  <div class="input-group">
+    <label for="name">Nombre:</label>
+    <input  type="text" name="name"  id="name" required #input5='ngModel'  [(ngModel)]="register.name" placeholder="Angie Cabanillas"/>
+    <p [class.nombreValido]="input5.valid">Primero debes completar este campo</p>
+  </div>
+  <div class="input-group">
+    <label for="email">Email:</label>
+    <input type="email" name="email" required id="email"  [(ngModel)]="register.email" placeholder="angie@gmail.com"/>
+    <p>Mensaje de error</p>
+  </div>
+  <div class="input-group">
+    <label for="password">Contraseña:</label>
+    <input type="password" name="password" required id="password"  [(ngModel)]="register.password" placeholder="12345678"/>
+    <p>Mensaje de error</p>
+  </div>
+  <button [disabled]="myForm.invalid" type="submit">Registrarse</button>
+</form>
+
+
+<!--NgClass and NgStyle-->
+<h1 class="title">NgClass and NgStyle</h1>
+<input type="text" required #input4="ngModel" [(ngModel)]="person.name" />
+<hr class="line-error"
+  [ngClass]="{
+    'valido':input4.valid,
+    'invalido':input4.invalid
+  }"
+/>
+<p class="message-error" [class.cualquier-nombre]="input4.invalid">
+  Este campo es requerido
+</p>
+
+<div>
+  <div>
+    <input type="number" [(ngModel)]="box.width" />
+    <input type="number" [(ngModel)]="box.height" />
+    <input type="color" [(ngModel)]="box.background" />
+  </div>
+  <div>
+    <div [ngStyle]="{
+      'width.px': box.width,
+      'height.px':box.height,
+      'background-color':box.background
+    }">
+    </div>
+  </div>
+</div>
+
+
 <!--Class[] and style-->
 <!--Dinamismo en class y style-->
-<h1 class="title">Classs and style</h1>
+<h1 class="title">Class and style</h1>
 <!--colocando identificador a input-->
 <input type="text" required #input2="ngModel" [(ngModel)]="person.name" />
 <!--crenado clase con el class-->
