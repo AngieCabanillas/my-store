@@ -106,4 +106,6 @@ export class AppComponent {
   onRegister(){
     console.log(this.register);
   }
+
+
 }
